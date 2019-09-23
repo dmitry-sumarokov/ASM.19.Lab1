@@ -110,10 +110,12 @@ class team:
     def writefile(self):
         f=open('asm1905/st11/team.dat','wb')
         pickle.dump(self.team,f)
+        f.close()
         
     def readfile(self):
         f=open('asm1905/st11/team.dat','rb')
         self.team = pickle.load(f)
+        f.close()
 
     def special(self):
         self.show()

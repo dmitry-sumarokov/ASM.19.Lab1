@@ -49,7 +49,7 @@ menu_actions = {
     '9': team.readfile
 }"""
 def main():
-    menu = {"1":("Analyst1", team.insertAnalyst),
+    menu = {"1":("Analyst", team.insertAnalyst),
         "2":("Developer", team.insertDeveloper),
         "3":("Tester", team.insertTester),        
         "4":("Edit", team.edit),
