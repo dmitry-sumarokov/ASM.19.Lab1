@@ -1,7 +1,7 @@
 if __name__ == '__main__':
-    from shop import shop
+    from shop import Shop
 else:
-    from .shop import shop
+    from .shop import Shop
 
 #from shop import Shop
 
