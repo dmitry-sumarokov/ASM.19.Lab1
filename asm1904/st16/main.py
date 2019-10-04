@@ -1,9 +1,4 @@
-if __name__ == '__main__':
-    from shop import Shop
-else:
-    from .shop import Shop
-
-#from shop import Shop
+from shop import Shop
 
 shop = Shop()
 
