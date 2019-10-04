@@ -1,4 +1,9 @@
-from MobilePhone import MobilePhone
+#from MobilePhone import MobilePhone
+
+if __name__ == '__main__':
+    from MobilePhone import MobilePhone
+else:
+    from .MobilePhone import MobilePhone
 
 class SmartPhone(MobilePhone):
 
