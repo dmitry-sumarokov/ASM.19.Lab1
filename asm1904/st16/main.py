@@ -1,7 +1,7 @@
 if __name__ == '__main__':
-    from group import group
+    from shop import shop
 else:
-    from .group import group
+    from .shop import shop
 
 #from shop import Shop
 
