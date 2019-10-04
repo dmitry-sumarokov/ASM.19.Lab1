@@ -1,4 +1,9 @@
-from shop import Shop
+if __name__ == '__main__':
+    from group import group
+else:
+    from .group import group
+
+#from shop import Shop
 
 shop = Shop()
 
