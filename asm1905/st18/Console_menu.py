@@ -2,11 +2,11 @@ from abc import ABC, abstractmethod
 import pickle
 from enum import Enum
 
-from Basic import Basic
-from Student import Student
-from Headman import Headman
-from Container import Container
-from Console_menu import Console_menu
+from .Basic import Basic
+from .Student import Student
+from .Headman import Headman
+from .Container import Container
+from .Console_menu import Console_menu
 
 element_type = Enum('element_type', 'student headman')
 
