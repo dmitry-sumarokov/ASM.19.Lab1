@@ -1,5 +1,13 @@
-from MobilePhone import MobilePhone
-from SmartPhone import SmartPhone
+if __name__ == '__main__':
+    from MobilePhone import MobilePhone
+else:
+    from .MobilePhone import MobilePhone
+
+if __name__ == '__main__':
+    from SmartPhone import SmartPhone
+else:
+    from .SmartPhone import SmartPhone
+
 import pickle
 
 class Shop:
