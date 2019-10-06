@@ -1,8 +1,8 @@
 import pickle
 import os
-from employer import employer
-from manager import manager
-from Context import Context
+from .employer import employer
+from .manager import manager
+from .Context import Context
 
 
 class Company:

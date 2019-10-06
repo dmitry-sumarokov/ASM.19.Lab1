@@ -1,4 +1,4 @@
-from company import Company
+from .company import Company
 
 def main():
     company_menu = Company()

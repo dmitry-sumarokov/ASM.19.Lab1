@@ -1,4 +1,4 @@
-from simple import simple
+from .simple import simple
 
 class Context:
     def __init__(self, simple: simple):

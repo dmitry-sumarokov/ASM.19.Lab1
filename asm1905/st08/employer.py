@@ -1,4 +1,4 @@
-from simple import simple
+from .simple import simple
 
 class employer(simple):
     def input_inf(self):
