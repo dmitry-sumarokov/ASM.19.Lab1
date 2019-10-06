@@ -26,5 +26,3 @@ def main():
                 print('введите номер!')
         except Exception as e:
             print(e, "\nконец")
-
-main()
