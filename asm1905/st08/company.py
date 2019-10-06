@@ -39,12 +39,12 @@ class Company:
         print('+')
 
     def save(self):
-        with open(os.path.join(os.path.abspath(__name__).replace('.st08.group', '/st08'), 'company.p'), 'wb') as f:
+        with open(os.path.join(os.path.abspath(__name__).replace('.st08.company', '/st08'), 'company.p'), 'wb') as f:
             pickle.dump(self._employers, f)
         print('+')
 
     def load(self):
-        with open(os.path.join(os.path.abspath(__name__).replace('.st08.group', '/st08'), 'company.p'), 'rb') as f:
+        with open(os.path.join(os.path.abspath(__name__).replace('.st08.company', '/st08'), 'company.p'), 'rb') as f:
             self._employers = pickle.load(f)
         print('+')
 
