@@ -36,3 +36,4 @@ class Context:
         self._simple._age = int(new_age) if new_age else self._simple._age
         new_email = input('Ред. email: ')
         self._simple._email = new_email if new_email else self._simple._email
+        self._simple.edit_inf()
