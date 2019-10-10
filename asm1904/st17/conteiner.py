@@ -1,10 +1,10 @@
-from parentclass import Animal
+#from parentclass import Animal
 #from parentclass import AnimalBehavior
 from childclass import Dog
 from childclass import Cat
-from childclass import CatBehavior
-from childclass import DogBehavior
-from childclass import Display
+#from childclass import CatBehavior
+#from childclass import DogBehavior
+#from childclass import Display
 
 import pickle
 
