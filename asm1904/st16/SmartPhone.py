@@ -1,21 +1,23 @@
-#from MobilePhone import MobilePhone
+#from Phone import Phone
+#from OS import WithOS
+#from RAM import EnterRAM
 
 if __name__ == '__main__':
-    from MobilePhone import MobilePhone
+    from Phone import Phone
 else:
-    from .MobilePhone import MobilePhone
+    from .Phone import Phone
 
-class SmartPhone(MobilePhone):
+if __name__ == '__main__':
+    from OS import WithOS
+else:
+    from .OS import WithOS
 
-    def __init__(self):
-        self.set_data()
-        
-    def set_data(self):
-        MobilePhone.set_data(self)
-        self.os = input("Enter the name of operating system:")
-        self.ram = input("Enter amount of RAM:")
-        
-    def display_data(self):
-        print(self.brand, self.screen_size, self.housing_type, self.os, self.ram)
-    
-        
+if __name__ == '__main__':
+    from RAM import EnterRAM
+else:
+    from .RAM import EnterRAM
+
+class SmartPhone(Phone):
+    OS = WithOS()
+    RAM = EnterRAM()
+

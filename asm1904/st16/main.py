@@ -18,17 +18,18 @@ menu = {"1": ("Add Mobile phone", shop.insert_MobilePhone),
         "9": ("Exit", "")
     }
 
+
 def main():
     while True:
         for i in menu:
-            print(i,": ", menu[i][0])
+            print(i, ": ", menu[i][0])
         k = input("Enter the number of command:")
         if k.isdigit():
             if int(k) <= len(menu):
-               if int(k) == 9:
-                   break
-               else:
-                   menu[k][1]()
+                if int(k) == 9:
+                    break
+                else:
+                    menu[k][1]()
             else:
                 print("Number is out of range!")
         else:

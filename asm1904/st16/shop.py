@@ -7,7 +7,7 @@ if __name__ == '__main__':
     from SmartPhone import SmartPhone
 else:
     from .SmartPhone import SmartPhone
-
+    
 import pickle
 
 class Shop:
