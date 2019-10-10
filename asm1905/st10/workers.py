@@ -9,10 +9,6 @@ class Workers():
         self.age = age
         self.qualification = qualification
         
-    """def SetBehaviour(self, workers_behaviour, IO_behaviour):
-        self.workers_behaviour = workers_behaviour
-        self.IO_behaviour = IO_behaviour """
-        
     def execute(self):
         self.workers_behaviour.execute(self.surname)
     

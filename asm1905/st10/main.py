@@ -3,8 +3,6 @@ if __name__ == '__main__':
 else:
     from .workers import workers 
 
-#from .Human import workers 
-
 workers=workers()
 
 def main():
