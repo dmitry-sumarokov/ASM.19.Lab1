@@ -1,5 +1,6 @@
 ﻿import asm1904.st00.main
 import asm1904.st01.main
+import asm1904.st11.main
 import asm1904.st14.main
 import asm1904.st16.main
 import asm1904.st17.main
@@ -19,6 +20,7 @@ import asm1905.st05.main
 MENU = [
 		["[1904-00] Образец 1904", asm1904.st00.main.main],
 		["[1904-01] Абраменкова", asm1904.st01.main.main],
+		["[1904-11] Корниенко", asm1904.st11.main.main],
 		["[1904-14] Новикова", asm1904.st14.main.main],
 		["[1904-16] Садыкова", asm1904.st16.main.main],
 		["[1904-17] Синицына", asm1904.st17.main.main],
