@@ -23,6 +23,7 @@ def menu():
     for i, item in enumerate(Menu):
         print(f'{item[0]}')
     print()
+    
     return int(input('Введите номер пункта меню: '))
 
 def main():
