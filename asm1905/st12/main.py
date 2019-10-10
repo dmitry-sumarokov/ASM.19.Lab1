@@ -24,6 +24,7 @@ def menu():
         print(f'{item[0]}')
     print()
     
+    
     return int(input('Введите номер пункта меню: '))
 
 def main():
