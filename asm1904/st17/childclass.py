@@ -1,5 +1,5 @@
 from .parentclass import Animal
-#from parentclass import AnimalBehavior
+from .parentclass import AnimalBehavior
 
 
 class CatBehavior():
