@@ -1,4 +1,4 @@
-from parentclass import Animal
+from .parentclass import Animal
 #from parentclass import AnimalBehavior
 
 
