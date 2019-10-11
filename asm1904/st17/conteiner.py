@@ -1,5 +1,4 @@
 from .parentclass import Animal
-from .parentclass import AnimalBehavior
 from .childclass import Dog
 from .childclass import Cat
 from .childclass import CatBehavior
