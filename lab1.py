@@ -4,7 +4,7 @@ import asm1904.st02.main
 import asm1904.st11.main
 import asm1904.st14.main
 import asm1904.st16.main
-import asm1904.st17.main
+#import asm1904.st17.main
 import asm1905.st00.main
 import asm1905.st02.main
 import asm1905.st11.main
@@ -16,7 +16,7 @@ import asm1905.st20.main
 import asm1905.st08.main
 import asm1905.st05.main
 import asm1905.st12.main
-import asm1905.st10.main
+#import asm1905.st10.main
 import asm1905.st04.main
 import asm1904.st12.main
 #	добавить импорт своего модуля по шаблону
@@ -29,7 +29,7 @@ MENU = [
 		["[1904-11] Корниенко", asm1904.st11.main.main],
 		["[1904-14] Новикова", asm1904.st14.main.main],
 		["[1904-16] Садыкова", asm1904.st16.main.main],
-		["[1904-17] Синицына", asm1904.st17.main.main],
+#		["[1904-17] Синицына", asm1904.st17.main.main],
 		["[1905-02] Вотинцев", asm1905.st02.main.main],
 		["[1905-11] Ремизова", asm1905.st11.main.main],
        	["[1905-13] Рыжов", asm1905.st13.main.main],
@@ -40,7 +40,7 @@ MENU = [
 		["[1905-08] Никандров", asm1905.st08.main.main],
         ["[1905-05] Коробка", asm1905.st05.main.main],
         ["[1905-12] Ручкина", asm1905.st12.main.main],
-		["[1905-10] Погонина", asm1905.st10.main.main],
+#		["[1905-10] Погонина", asm1905.st10.main.main],
         ["[1905-04] Колодин", asm1905.st04.main.main],
         ["[1904-12] Кривов", asm1904.st12.main.main],
 #		добавить пункт меню для вызова своей главной функции по шаблону:
