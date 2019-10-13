@@ -9,6 +9,7 @@ import asm1904.st17.main
 import asm1904.st19.main
 import asm1905.st00.main
 import asm1905.st02.main
+import asm1905.st07.main
 import asm1905.st11.main
 import asm1905.st13.main
 import asm1905.st17.main
@@ -35,6 +36,7 @@ MENU = [
 		["[1904-17] Синицына", asm1904.st17.main.main],
 		["[1904-19] Танин", asm1904.st19.main.main],
 		["[1905-02] Вотинцев", asm1905.st02.main.main],
+		["[1905-07] Михайлова", asm1905.st07.main.main],
 		["[1905-11] Ремизова", asm1905.st11.main.main],
        	["[1905-13] Рыжов", asm1905.st13.main.main],
 		["[1905-17] Суфьянов", asm1905.st17.main.main],
