@@ -41,14 +41,14 @@ class ACS_SC_dep:
                 pass
 
     def hire_employee(self):
-        c_params = Common_Params(self.menu[self.main_menu()][1]())
-        c_params.hire_employee()
-        self.employees.append(c_params)
+        emp = self.menu[self.main_menu()][1]()
+        emp.enter_emp_params()
+        self.employees.append(emp)
         print('Hired successfully')
 
     def fire_employee(self):
         for i, item in enumerate(self.employees):
-            item.print_emp_brief(i)
+            item.print_employees(i)
 
         print('Enter a number of employee you\'d like to fire or just press \'ENTER\': ')
         while True:
