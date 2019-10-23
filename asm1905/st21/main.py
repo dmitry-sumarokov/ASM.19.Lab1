@@ -1,45 +1,24 @@
-from .scrumTeam import team
+from .scrumTeam import ScrumTeam
 from colorama import init
-from colorama import Fore, Style
+from colorama import Fore
+from .menuItems import MENU
+from .commonFunctions import get_menu_input
+import os
 
-
-# - данные сохраняются с помощью модуля pickle.
-
-def getMenuInput():
-    for i, key in enumerate(MENU):
-        print(Fore.YELLOW + str(i) + ') ' + key[0])
-    response = ''
-
-    while not response.isdigit():
-        response = input(Fore.BLUE + 'Please, input your choice:')
-
-    return response
-
-
-MENU = [
-    ['See menu', getMenuInput],
-    ['See list of employees', 'lala'],
-    ['Add employee', 'omega'],
-    ['Edit employee', 'gamma'],
-    ['Fire employee', 'assadasd'],
-    ['Export to file', 'adasd'],
-    ['Import from file', 'ds']
-]
+scrumTeam = ScrumTeam()
 
 
 def main():
-    init(autoreset=True)
+    print(os.path.abspath(__name__))
+    init()
     print(Fore.MAGENTA + '~~~ You were accepted as head of our HR Departament! ~~~')
     print(Fore.CYAN + 'Feel free to change/add/delete positions')
-    getMenuInput()
 
     try:
         while 1:
-            print(MENU[int(getMenuInput())])
+            getattr(scrumTeam, MENU[int(get_menu_input(MENU))][1])()
     except Exception as e:
-        print(Fore.MAGENTA + e + ' YOU DIED ')
-
-    # team().f()
+        print(Fore.MAGENTA + e + ' ~YOU DIED~ ')
 
 
 if __name__ == '__main__':
