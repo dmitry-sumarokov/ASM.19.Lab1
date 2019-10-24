@@ -1,5 +1,5 @@
 ﻿import pickle
-import os
+import os.path
 from .employee import Employee
 from .menuItems import ADDITION_MENU
 from .commonFunctions import get_menu_input
@@ -33,12 +33,32 @@ class ScrumTeam:
     def listen_personal(self):
         self._employees[return_number()].saying()
 
+    # The pickle module implements binary protocols for serializing and de-serializing a Python object structure.
+    # “Pickling” is the process whereby a Python object hierarchy is converted into a byte stream, and “unpickling”
+    # is the inverse operation, whereby a byte stream (from a binary file or bytes-like object) is converted back
+    # into an object hierarchy.
     def save_to_file(self):
-        pickle.dump(self._employees,
-                    open(os.path.join(os.path.abspath(__name__).replace('.st21.scrumTeam', '/st21'), 'employees'), 'wb'))
-        print(Fore.MAGENTA + 'Saved to file!')
+        fn = input(Fore.CYAN + 'Enter file name: ')
+        try:
+            file = open(
+                os.path.join(os.path.abspath(__name__).replace('.st21.scrumTeam', '/st21'),
+                             fn
+                             ), 'wb')
+        except IOError:
+            file = open(os.path.join(os.path.abspath(__name__).replace('.st21.scrumTeam', '/st21'),
+                                     fn
+                                     ), 'xb')
+        pickle.dump(self._employees, file)
+        print(Fore.MAGENTA + 'Saved to "' + fn + '" file!')
 
     def load_from_file(self):
-        self._employees = pickle.load(
-            open(os.path.join(os.path.abspath(__name__).replace('.st21.scrumTeam', '/st21'), 'employees'), 'rb'))
-        print(Fore.MAGENTA + 'Loaded from file!')
+        fn = input(Fore.CYAN + 'Enter file name: ')
+        try:
+            file = open(
+                os.path.join(os.path.abspath(__name__).replace('.st21.scrumTeam', '/st21'),
+                             fn
+                             ), 'rb')
+            self._employees = pickle.load(file)
+            print(Fore.MAGENTA + 'Loaded from "' + fn + '" file!')
+        except IOError:
+            print(Fore.MAGENTA + 'File doesn`t exist!')

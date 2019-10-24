@@ -9,7 +9,6 @@ scrumTeam = ScrumTeam()
 
 
 def main():
-    print(os.path.abspath(__name__))
     init()
     print(Fore.MAGENTA + '~~~ You were accepted as head of our HR Departament! ~~~')
     print(Fore.CYAN + 'Feel free to change/add/delete positions')
