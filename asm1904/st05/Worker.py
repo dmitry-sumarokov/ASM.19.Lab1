@@ -12,15 +12,14 @@ class Worker():
 		self.IO_behaviour = IO_behaviour
 
 	def execute(self):
-    	self.human_behaviour.execute(self.Surname)
+		self.human_behaviour.execute(self.Surname)
 
+	def read():
+		self.IO_behaviour = read(self)
 
-    def read():
-    	self.IO_behaviour = read(self)
-
-    def write():
-    	self.IO_behaviour = write(self)
-    	
+	def write():
+		self.IO_behaviour = write(self)
+		
 class WorkerBehaviour():
 	def execute(self, Name):
 		raise NotImplementedError()
@@ -37,21 +36,21 @@ class CleanerBehaviour(WorkerBehaviour):
 	def execute(self, Name):
 		print(Name + 'Cleaner')
 	
-class IOBehaviourr():
-    def read(self, Worker):
-        raise NotImplementedError()
+class IOBehaviour():
+	def read(self, Worker):
+		raise NotImplementedError()
 
-    def write(self, Worker):
-        raise NotImplementedError()
+	def write(self, Worker):
+		raise NotImplementedError()
 
 class IO_Console(IOBehaviour):
-    def read(self, Worker):
-        human.Name = input("Name: ")
-        human.Surname = input("Surname: ")
-        human.Position = input("Position: ")
+	def read(self, Worker):
+		human.Name = input("Name: ")
+		human.Surname = input("Surname: ")
+		human.Position = input("Position: ")
 
-    def write(self, Worker):
-        print(human.Name, human.Surname, human.Position)
+	def write(self, Worker):
+		print(human.Name, human.Surname, human.Position)
 
 class Seller(Worker):
 	behaviour = SellerBehaviour()
