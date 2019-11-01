@@ -12,7 +12,7 @@ class Worker():
 		self.IO_behaviour = IO_behaviour
 
 	def execute(self):
-        self.human_behaviour.execute(self.Surname)
+    	self.human_behaviour.execute(self.Surname)
 
 
     def read():
