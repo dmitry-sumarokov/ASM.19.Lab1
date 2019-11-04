@@ -2,64 +2,53 @@ class Worker():
 	Worker_behaviour = None
 	IO_behaviour = None
 
-	def __init__(self, Name = '', Surname = '', Position = ''):
-		self.Name = Name
-		self.Surname = Surname
+	def __init__(self, Fname =' ', Sname = ' ', Position = ' '):
+		self.Fname = Fname
+		self.Sname = Sname
 		self.Position = Position
 
-	def SetBehaviour(self, Worker_behaviour, IO_behaviour):
-		self.Worker_behaviour = Worker_behaviour
-		self.IO_behaviour = IO_behaviour
+	def SetBehaviour(self, human_behaviour, IO_behaviour):
+		self.human_behaviour = Worker_behaviour
+		self.IO_behaviour = IO_behaviour 
 
 	def execute(self):
-		self.human_behaviour.execute(self.Surname)
+		self.Worker_behaviour.execute(self.Sname)
 
-	def read():
-		self.IO_behaviour = read(self)
+	def read(self):
+		self.IO_behaviour.read(self)
 
-	def write():
-		self.IO_behaviour = write(self)
-		
-class WorkerBehaviour():
-	def execute(self, Name):
-		raise NotImplementedError()
+	def write(self):
+		self.IO_behaviour.write(self)
 
-class SellerBehaviour(WorkerBehaviour):
-	def execute(self, Name):
-		print (Name + 'Seller')
+class SellerrBehaviour():
+	def execute(self, Sname):
+		print('Position of '+ Sname + ': Seller')
 
-class ManagerBehaviout(WorkerBehaviour):
-	def execute(self, Name):
-		print(Name + 'Manager')
+class ManagerBehaviour():
+	def execute(self, Sname):
+		print('Position of '+ Sname + ': Manager')
 
-class CleanerBehaviour(WorkerBehaviour):
-	def execute(self, Name):
-		print(Name + 'Cleaner')
-	
-class IOBehaviour():
+class CleanerBehaviour():
+	def execute(self, Sname):
+		print('Position of '+ Sname + ': Cleaner')
+
+class IOConsole():
 	def read(self, Worker):
-		raise NotImplementedError()
+		Worker.Fname = input("First name: ")
+		Worker.Sname = input("Second name: ")
+		Worker.Position = input("Position: ")
 
 	def write(self, Worker):
-		raise NotImplementedError()
-
-class IO_Console(IOBehaviour):
-	def read(self, Worker):
-		human.Name = input("Name: ")
-		human.Surname = input("Surname: ")
-		human.Position = input("Position: ")
-
-	def write(self, Worker):
-		print(human.Name, human.Surname, human.Position)
+		print(Worker.Fname, Worker.Sname, Worker.Position)
 
 class Seller(Worker):
-	behaviour = SellerBehaviour()
-	IOBehaviour = IO_Console()
+	human_behaviour = SellerrBehaviour()
+	IO_behaviour= IOConsole()
 
 class Manager(Worker):
-	 behaviour = WorkerBehaviour()
-	 IOBehaviour = IO_Console()
+	human_behaviour = ManagerBehaviour()
+	IO_behaviour= IOConsole()
 
 class Cleaner(Worker):
-	behaviour = CleanerBehaviour()
-	IOBehaviour = IO_Console()
+	human_behaviour = CleanerBehaviour()  
+	IO_behaviour = IOConsole() 
