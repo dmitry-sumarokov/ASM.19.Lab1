@@ -26,7 +26,7 @@ import asm1905.st01.main
 import asm1905.st21.main as begovic
 import asm1904.st06.main
 import asm1904.st05.main
-import asm1005.st15.main
+import asm1905.st15.main
 #	добавить импорт своего модуля по шаблону
 #	import asm<код группы>.st<номер по журналу>.main
 
