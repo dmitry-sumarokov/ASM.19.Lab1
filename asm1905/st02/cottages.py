@@ -1,7 +1,10 @@
 import pickle
-from stone_houses import stone_house
-from wood_houses import wood_house
-import material_types
+if __name__ == '__main__':
+    from stone_houses import stone_house
+    from wood_houses import wood_house
+else:
+    from .stone_houses import stone_house
+    from .wood_houses import wood_house
 #import os
 
 class cottage():

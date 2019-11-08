@@ -1,8 +1,9 @@
 if __name__ == '__main__':
 	from group import group
+	from menu import startMenu
 else:
 	from .group import group
-from menu import startMenu
+	from .menu import startMenu
 
 
 def main():

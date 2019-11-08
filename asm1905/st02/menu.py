@@ -1,4 +1,7 @@
-from cottages import cottage
+if __name__ == '__main__':
+    from cottages import cottage
+else:
+    from .cottages import cottage
 
 
 

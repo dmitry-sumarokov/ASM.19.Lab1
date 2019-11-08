@@ -1,4 +1,7 @@
-from houses import materialType
+if __name__ == '__main__':
+    from houses import materialType
+else:
+    from .houses import materialType
 
 class stoneType(materialType):
     def do_algorithm(self):
