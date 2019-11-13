@@ -1,5 +1,6 @@
 from .ACS_SC_dep import ACS_SC_dep
 
+
 def main():
     dep = ACS_SC_dep()
     print('Congratulations!!! You have just become the head of Automated Control Systems Security Center department')
@@ -12,7 +13,7 @@ def main():
                  ('Save employees list to file', dep.save_to_file),
                  ('Load employees list from file', dep.load_from_file),
                  ('Close department (delete all info about employees)', dep.close_dep))
-                 # ('Exit department', exit))
+    # ('Exit department', exit))
 
     while True:
         try:
@@ -27,5 +28,3 @@ def main():
                 print('Enter a number from main menu!')
         except Exception as e:
             print(e, "\n\nEnd of working day")
-
-

@@ -1,20 +1,33 @@
 ﻿import os
 import pickle
-from .Common_Params import Common_Params
+
+from .Employee import Employee
+
+from .CommonActions import CommonActions
+
 from .Analyst import Analyst
+from .AnalystAction import AnalystAction
+
 from .DevOps import DevOps
+from .DevOpsAction import DevOpsAction
+
 from .DB_Dev import DB_Dev
+from .DB_DevAction import DB_DevAction
+
 from .Backend_Dev import Backend_Dev
+from .Backend_DevAction import Backend_DevAction
+
 from .Frontend_Dev import Frontend_Dev
+from .Frontend_DevAction import Frontend_DevAction
 
 
 class ACS_SC_dep:
     def __init__(self):
-        self.menu = (('Add Analyst', Analyst),
-                     ('Add DevOps', DevOps),
-                     ('Add BD Dev', DB_Dev),
-                     ('Add Backend Dev', Backend_Dev),
-                     ('Add Frontend Dev', Frontend_Dev))
+        self.menu = (('Add Analyst', Analyst, AnalystAction),
+                     ('Add DevOps', DevOps, DevOpsAction),
+                     ('Add BD Dev', DB_Dev, DB_DevAction),
+                     ('Add Backend Dev', Backend_Dev, Backend_DevAction),
+                     ('Add Frontend Dev', Frontend_Dev, Frontend_DevAction))
         self.employees = []
 
     def main_menu(self):
@@ -22,7 +35,14 @@ class ACS_SC_dep:
         for i, item in enumerate(self.menu):
             print("{0:2}. {1}".format(i, item[0]))
         print("------------------------------")
-        return int(input())
+        while True:
+            emp_type = input()
+            if emp_type.isdigit():
+                break
+            else:
+                print('Enter a NUMBER!')
+                pass
+        return int(emp_type)
 
     def special_action(self):
         for i, item in enumerate(self.employees):
@@ -41,9 +61,8 @@ class ACS_SC_dep:
                 pass
 
     def hire_employee(self):
-        c_params = Common_Params(self.menu[self.main_menu()][1]())
-        c_params.hire_employee()
-        self.employees.append(c_params)
+        n = self.main_menu()
+        self.employees.append(Employee(self.menu[n][1], self.menu[n][2]))
         print('Hired successfully')
 
     def fire_employee(self):
@@ -83,7 +102,6 @@ class ACS_SC_dep:
                 print('You should enter a NUMBER or just press \'ENTER\'')
                 pass
         print('Altered successfully')
-        # pass
 
     def print_emp_list(self):
         for i, item in enumerate(self.employees):

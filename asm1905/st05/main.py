@@ -25,5 +25,3 @@ def main():
             Main_menu[menu()][1]()
     except Exception as e:
         print(e, 'Выход', sep='\n')
-
-main()
