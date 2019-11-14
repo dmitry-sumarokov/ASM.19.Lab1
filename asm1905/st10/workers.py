@@ -58,11 +58,11 @@ class Geologist(Workers):
     IO_behaviour= IOConsole()
 
 class Developer(Workers):
+
+        
     workers_behaviour = DeveloperBehaviour()  
     IO_behaviour = IOConsole()
 
-
-        
 class workers:
     def __init__(self):
         self.staff=[]
@@ -91,7 +91,7 @@ class workers:
     def show(self):
         for (i,staff) in enumerate (self.staff):
             print(i+1)
-	    self.staff[i-1].execute()
+            self.staff[i-1].execute()
             staff.write()
 
     def edit(self):
