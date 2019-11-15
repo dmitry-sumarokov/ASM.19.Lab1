@@ -6,7 +6,7 @@ class Workman():
 		self.Name = Name
 		self.Surname = Surname
 		self.Function = Function
-
+        
 	def SetBehaviour(self, Workman_behaviour, IO_behaviour):
 		self.Workman_behaviour = Workman_behaviour
 		self.IO_behaviour = IO_behaviour 
