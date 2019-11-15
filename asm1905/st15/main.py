@@ -10,7 +10,7 @@ group=group()
 def main():
     menu = {"1":("Добавить механика", group.insertMechanic),
         "2":(" Добавить главного инженера", group.insertMainEngineer),
-        "3":("Добавить охранника", group.insertCleaner),        
+        "3":("Добавить охранника", group.insertSecurity),        
         "4":("Специальное действие", group.execute),
         "5":("Добавить действие", group.edit),
         "6":("Удалить", group.delete),
