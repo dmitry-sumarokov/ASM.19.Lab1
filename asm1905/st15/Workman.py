@@ -45,7 +45,7 @@ class Mechanic(Workman):
 	Workman_behaviour = MechanicBehaviour()
 	IO_behaviour= IOConsole()
 
-class MainEnginerr(Workman):
+class MainEngineer(Workman):
 	Workman_behaviour = MainEngineerBehaviour()
 	IO_behaviour= IOConsole()
 
