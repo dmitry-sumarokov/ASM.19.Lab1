@@ -1,4 +1,4 @@
-Leaderclass Employee():
+class Employee:
 	Employee_behaviour = None
 	IO_behaviour = None
 
@@ -7,8 +7,8 @@ Leaderclass Employee():
 		self.Surname = Surname
 		self.Position = Position
 
-	def SetBehaviour(self, human_behaviour, IO_behaviour):
-		self.human_behaviour = Employee_behaviour
+	def SetBehaviour(self, Employee_behaviour, IO_behaviour):
+		self.Employee_behaviour = Employee_behaviour
 		self.IO_behaviour = IO_behaviour
 
 	def execute(self):
@@ -42,13 +42,13 @@ class IOConsole():
 		print(Employee.Name, Employee.Surname, Employee.Position)
 
 class Leader(Employee):
-	human_behaviour = LeaderrBehaviour()
+	Employee_behaviour = LeaderBehaviour()
 	IO_behaviour= IOConsole()
 
 class Manager(Employee):
-	human_behaviour = ManagerBehaviour()
+	Employee_behaviour = ManagerBehaviour()
 	IO_behaviour= IOConsole()
 
 class Assistant(Employee):
-	human_behaviour = AssistantBehaviour()
+	Employee_behaviour = AssistantBehaviour()
 	IO_behaviour = IOConsole()

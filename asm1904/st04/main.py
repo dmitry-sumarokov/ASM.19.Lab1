@@ -6,9 +6,9 @@ else:
 group=group()
 
 def main():
-    menu = {"1":("Add Seller", group.insertSeller),
+    menu = {"1":("Add Leader", group.insertLeader),
         "2":("Add Manager", group.insertManager),
-        "3":("Add Cleaner", group.insertCleaner),
+        "3":("Add Assistant", group.insertAssistant),
         "4":("Special action", group.execute),
         "5":("Edit", group.edit),
         "6":("Delete", group.delete),
