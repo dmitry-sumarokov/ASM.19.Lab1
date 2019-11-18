@@ -6,7 +6,7 @@ class Workman():
 		self.Name = Name
 		self.Surname = Surname
 		self.Function = Function
-
+        
 	def SetBehaviour(self, Workman_behaviour, IO_behaviour):
 		self.Workman_behaviour = Workman_behaviour
 		self.IO_behaviour = IO_behaviour 
@@ -45,7 +45,7 @@ class Mechanic(Workman):
 	Workman_behaviour = MechanicBehaviour()
 	IO_behaviour= IOConsole()
 
-class MainEnginerr(Workman):
+class MainEngineer(Workman):
 	Workman_behaviour = MainEngineerBehaviour()
 	IO_behaviour= IOConsole()
 

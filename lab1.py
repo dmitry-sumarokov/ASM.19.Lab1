@@ -23,11 +23,15 @@ import asm1905.st10.main
 import asm1905.st04.main
 import asm1904.st12.main
 import asm1905.st01.main
-import asm1905.st21.main as begovic
+#import asm1905.st21.main as begovic
 import asm1904.st06.main
 import asm1904.st05.main
+#<<<<<<< HEAD
 import asm1904.st04.main
 #import asm1905.st15.main
+#=======
+import asm1905.st15.main
+#>>>>>>> f2e9c8a99c16318329e3e861757c6c91333c6298
 #	добавить импорт своего модуля по шаблону
 #	import asm<код группы>.st<номер по журналу>.main
 
@@ -56,11 +60,15 @@ MENU = [
         ["[1905-04] Колодин", asm1905.st04.main.main],
         ["[1904-12] Кривов", asm1904.st12.main.main],
 		["[1905-01] Абдуллина", asm1905.st01.main.main],
-		["[1905-21] Бегович", begovic.main],
+		#["[1905-21] Бегович", begovic.main],
 		["[1904-06] Дремезов", asm1904.st06.main.main],
 		["[1904-05] Дмитраков", asm1904.st05.main.main],
+#<<<<<<< HEAD
 		["[1904-04] Гасанов", asm1904.st04.main.main],
 #		["[1905-15] Синявский", asm1905.st15.main.main],
+#=======
+		["[1905-15] Синявский", asm1905.st15.main.main],
+#>>>>>>> f2e9c8a99c16318329e3e861757c6c91333c6298
 #		добавить пункт меню для вызова своей главной функции по шаблону:
 #		["[<код группы>-<номер по журналу>] <Фамилия>", <ссылка на функцию>],
 	]
