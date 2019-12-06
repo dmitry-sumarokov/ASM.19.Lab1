@@ -23,7 +23,7 @@ import asm1905.st10.main
 import asm1905.st04.main
 import asm1904.st12.main
 import asm1905.st01.main
-import asm1905.st21.main as begovic
+#import asm1905.st21.main as begovic
 import asm1904.st06.main
 import asm1904.st05.main
 #	добавить импорт своего модуля по шаблону
@@ -54,7 +54,7 @@ MENU = [
         ["[1905-04] Колодин", asm1905.st04.main.main],
         ["[1904-12] Кривов", asm1904.st12.main.main],
 		["[1905-01] Абдуллина", asm1905.st01.main.main],
-		["[1905-21] Бегович", begovic.main],
+		#["[1905-21] Бегович", begovic.main],
 		["[1904-06] Дремезов", asm1904.st06.main.main],
 		["[1904-05] Дмитраков", asm1904.st05.main.main],
 #		добавить пункт меню для вызова своей главной функции по шаблону:
