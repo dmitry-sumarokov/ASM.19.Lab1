@@ -7,6 +7,7 @@ import asm1904.st15.main
 import asm1904.st16.main
 import asm1904.st17.main
 import asm1904.st19.main
+import asm1904.st09.main
 import asm1905.st00.main
 import asm1905.st02.main
 import asm1905.st07.main
@@ -63,6 +64,7 @@ MENU = [
 		["[1904-04] Гасанов", asm1904.st04.main.main],
 #		["[1905-15] Синявский", asm1905.st15.main.main],
 		["[1905-15] Синявский", asm1905.st15.main.main],
+		["[1904-09] Камшилов", asm1904.st09.main.main],
 #		добавить пункт меню для вызова своей главной функции по шаблону:
 #		["[<код группы>-<номер по журналу>] <Фамилия>", <ссылка на функцию>],
 	]
