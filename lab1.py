@@ -22,6 +22,7 @@ import asm1905.st05.main
 import asm1905.st12.main
 import asm1905.st10.main
 import asm1905.st04.main
+import asm1905.st03.main
 import asm1904.st12.main
 import asm1905.st01.main
 #import asm1905.st21.main as begovic
@@ -44,6 +45,7 @@ MENU = [
 		["[1904-17] Синицына", asm1904.st17.main.main],
 		["[1904-19] Танин", asm1904.st19.main.main],
 		["[1905-02] Вотинцев", asm1905.st02.main.main],
+	        ["[1905-03] Кокухин", asm1905.st03.main.main],
 		["[1905-07] Михайлова", asm1905.st07.main.main],
 		["[1905-11] Ремизова", asm1905.st11.main.main],
        	["[1905-13] Рыжов", asm1905.st13.main.main],
