@@ -23,5 +23,6 @@ def main():
             if choice >= 0 and choice < len(options):
                 func = options[choice][1]
                 func()
+                print('DONE')
         except KeyboardInterrupt:
             break
