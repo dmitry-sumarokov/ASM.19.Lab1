@@ -1,4 +1,4 @@
-from Earth import Earth
+from .Earth import Earth
 if __name__ == '__main__':
     from group import group
 else:
