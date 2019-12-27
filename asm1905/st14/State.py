@@ -1,4 +1,4 @@
-from Edit import Edithuman
+from .Edit import Edithuman
 
 class woman_beh():
 
