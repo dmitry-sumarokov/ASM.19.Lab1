@@ -1,5 +1,5 @@
 import pickle
-from products import Table, Wardrobe, Bed
+from .products import Table, Wardrobe, Bed
 
 class Shop:
 
