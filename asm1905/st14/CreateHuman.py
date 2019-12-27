@@ -1,5 +1,5 @@
-from Human import Human
-from State import man_beh, woman_beh
+from .Human import Human
+from .State import man_beh, woman_beh
 
 class woman(Human):
 
