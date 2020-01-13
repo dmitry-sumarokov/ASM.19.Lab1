@@ -1,5 +1,5 @@
-from item import Item
-from items_beh import Table_beh, Bed_beh, Wardrobe_beh
+from .item import Item
+from .items_beh import Table_beh, Bed_beh, Wardrobe_beh
 
 class Table(Item):
 

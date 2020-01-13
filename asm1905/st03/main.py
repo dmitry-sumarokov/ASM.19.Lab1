@@ -1,4 +1,4 @@
-from shop import Shop
+from .shop import Shop
 
 Shop = Shop()
 
@@ -24,6 +24,4 @@ def main():
         while True:
             Main_menu[menu()][1]()
     except Exception as e:
-        print(e, 'Выход', sep='\n')
-
-main()        
+        print(e, 'Выход', sep='\n')    

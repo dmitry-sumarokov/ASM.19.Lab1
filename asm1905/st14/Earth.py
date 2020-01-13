@@ -1,5 +1,5 @@
 import pickle
-from CreateHuman import man, woman
+from .CreateHuman import man, woman
 
 class Earth:
 

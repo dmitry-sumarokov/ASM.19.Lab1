@@ -1,4 +1,4 @@
-﻿import asm1904.st00.main
+import asm1904.st00.main
 import asm1904.st01.main
 import asm1904.st02.main
 import asm1904.st11.main
